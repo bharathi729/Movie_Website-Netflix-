@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="movie_website.css">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Netflix India-Watch TV Shows Online,Watch Movies Online</title>
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">NETFLIX</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li> 
+                    <li class="menu-list-item">Popular</li>
+                   <li class="menu-list-item">Trends</li> 
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="https://cdn-icons-png.flaticon.com/512/4974/4974985.png"alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-1.jpg');">
+                <img class="featured-title" src="f-t-1.png" alt="">
+                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                minima voluptatibus incidunt. Accusamus, provident.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">POPULAR</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/ante_sundaraniki_release_date_poster.jpg" alt="">
+                            <span class="movie-list-item-title">Ante Sundaraniki</span>
+                            <p class="movie-list-item-desc">A man from a Brahmin family falls in love with a Christian girl. In order to convince...</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://alllatestbuzz.com/wp-content/uploads/2018/10/chichore-e1539082617857.jpg"alt="">
+                            <span class="movie-list-item-title">Chichore</span>
+                            <p class="movie-list-item-desc"> A bunch of engineering students and their journey from being losers to choosers. </p>
+                                
+                           
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://www.tollywood.net/wp-content/uploads/2021/04/Tuck-Jagadish-Ugadi-poster-pleasing-eye.jpg" alt="">
+                            <span class="movie-list-item-title">Tuck Jagadeesh</span>
+                            <p class="movie-list-item-desc">In a village with greedy property fights among the families, Jagadish(Nani) carries...
+                               
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://images.thequint.com/thequint/2022-03/ac22f7da-ce9d-47ab-b348-8e682ab53765/952506_rrr_releasedate.jpeg" alt="">
+                            <span class="movie-list-item-title">RRR</span>
+                            <p class="movie-list-item-desc">A fictitious story about two legendary revolutionaries and their journey away from...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="data:image/jpeg;base64,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" alt="">
+                            <span class="movie-list-item-title">Mahanati</span>
+                            <p class="movie-list-item-desc">Savitri, the most admired actress from South Indian cinema, goes through various...
+                               
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src=" https://www.quirkybyte.com/wp-content/uploads/2018/12/kanaa.jpg" alt="">
+                             <span class="movie-list-item-title">Kanaa</span>
+                            <p class="movie-list-item-desc">Kousalya, a farmer's daughter, dreams of becoming an international cricketer and...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0oh9vvs9288dmj8io1b3nkmhg4-20220116131134.jpeg" alt="">
+                            <span class="movie-list-item-title">Achaarya</span>
+                            <p class="movie-list-item-desc">While Padaghattam masters Ayurveda,its neighbouring village,Dharmasthali,is tormen...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="arrow fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://wallpapercave.com/wp/wp11581877.jpg" alt="">
+                            <span class="movie-list-item-title">Kanthaara</span>
+                            <p class="movie-list-item-desc">In village of Dakshina Kannada Kantara brings alive culture of Kambla and Bhootha Kola...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/09/sita-ramam-movie-review-002.jpg"  alt="">
+                            <span class="movie-list-item-title">Seetha Ramam</span>
+                            <p class="movie-list-item-desc">An orphaned soldier's life changes after he receives a letter from a girl named Sita...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9K8LIC1jVE8LBXGO70texZH65tJEZMVyl-RPuAVKsfIazZSv-ueW3Fugth7Z-qbEkVI&usqp=CAU" alt="">
+                            <span class="movie-list-item-title">Bimbisara</span>
+                            <p class="movie-list-item-desc">Bimbisara is a ruthless king of the Trigartala kingdom. He is evil and his only motto...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src=" https://www.koimoi.com/wp-content/new-galleries/2022/09/brahmastra-box-office-day-5-early-trends-ayan-mukerjis-film-loses-its-grip-at-the-bo-deets-inside-01.jpg" alt="">
+                            <span class="movie-list-item-title">Bramhastra</span>
+                            <p class="movie-list-item-desc">A young man on the brink of falling in love gets his world turned upside down when he...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-s5l0ihtqe9ig4adnv34c75cj70-20211217153612.Medi.jpeg" alt="">
+                            <span class="movie-list-item-title">Pushpa</span>
+                            <p class="movie-list-item-desc">A labourer named Pushpa makes enemies as he rises in the world of red sandalwood...
+                                
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://cdn.gulte.com/wp-content/uploads/2022/08/Dhanush-Thiru.jpg" alt="">
+                             <span class="movie-list-item-title">Thiru</span>
+                            <p class="movie-list-item-desc">Thiru(Dhanush) is a college dropout who works as a delivery boy. His life is complicated...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrMO0TV-ZzevjL_eDh8T0jwXK3miFVJ3jXCvYRSKjK__ubFvvk71errqM4S9JvxrzLWMk&usqp=CAU" alt="">
+                            <span class="movie-list-item-title">Karthikeya 2</span>
+                            <p class="movie-list-item-desc">Karthikeya (Nikhil Siddharth), a doctor, gets suspended from the hospital when he beats up...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="arrow fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('f-2.jpg');">
+                <img class="featured-title" src="f-t-2.png" alt="">
+                <p class="featured-desc">A murderous, undead girl haunts the remote stretch of woods where she was killed decades earlier. One night, she discovers a blind boy hiding in the trunk of one of her victim's cars. Her decision to let the boy live throws her solitary existence into upheaval,...</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TRENDING</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://i.pinimg.com/736x/3f/01/8b/3f018b925c755a06bf0b21f24c0cf234.jpg" alt="">
+                            <span class="movie-list-item-title">Money Heist</span>
+                            <p class="movie-list-item-desc">An unusual group of robbers attempt to carry out the most perfect robbery in Spanish...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static.displate.com/280x392/displate/2022-09-05/67f549944a390c766fd186979ddb0f97_76ae2aa56db908b08a17c67a7371903a.jpg" alt="">
+                            
+                            <span class="movie-list-item-title">Stranger Things</span>
+                            <p class="movie-list-item-desc">After the mysterious and sudden vanishing of a young boy, the people of a small...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://i.pinimg.com/originals/b3/95/24/b39524e3ac99d7fa2c1cd71c16457dea.jpg" alt="">
+                            <span class="movie-list-item-title">Moon Lovers</span>
+                            <p class="movie-list-item-desc">When a total eclipse of the sun took place, a 21st century woman, is transported...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://i2.cinestaan.com/image-bank/640-360/177001-178000/177282.jpg" alt="">
+                            <span class="movie-list-item-title">Mirzapur</span>
+                            <p class="movie-list-item-desc">A shocking incident at a wedding procession ignites a series of events entangling...</p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://cdn.123telugu.com/content/wp-content/uploads/2021/08/navarasa-feat.jpg" alt="">
+                            <span class="movie-list-item-title">Navarasa</span>
+                            <p class="movie-list-item-desc">The anthology film revolves around nine emotions in human life like Love, laughter, anger,...
+
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://pbs.twimg.com/media/FP6bxXwXEAUT7-I?format=jpg&name=small" alt="">
+                             <span class="movie-list-item-title">Thar</span>
+                            <p class="movie-list-item-desc">A mysterious stranger arrives in a village situated in the Thar desert and crosses paths...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="19.jpg" alt="">
+                            <span class="movie-list-item-title">Spiderman</span>
+                            <p class="movie-list-item-desc">After being bitten by a genetically-altered spider, outcast teenager Peter Parker...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="arrow fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">THRILLER</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static.toiimg.com/photo/msid-87813562/87813562.jpg" alt="">
+                            <span class="movie-list-item-title">RavanaLanka</span>
+                            <p class="movie-list-item-desc">Four friends go to Goa for vacation but one of them dies under mysterious circumst...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://1847884116.rsc.cdn77.org/kannada/gallery/movies/chakravyuhapuneeth/main.jpg" alt="">
+                            <span class="movie-list-item-title">Chakravyuha</span>
+                            <p class="movie-list-item-desc">Authorities turn a blind eye to the violence that takes place in a college at the behest...</p>
+                            
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMNATo9Txv1eB_14uKzcUn-L9xBqGgGfliE9gCcVKAngDUPwjojxaKIXlzAWCbFnQWw1c&usqp=CAU" alt="">
+                            <span class="movie-list-item-title">FIR</span>
+                            <p class="movie-list-item-desc">When an ordinary young man gets entangled in a terrorism case, he becomes evil in...</p>
+                            
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-63478,resizemode-1,msid-93917019/magazines/panache/process-of-catching-a-killer-messy-but-life-is-messy-delhi-crime-2-director.jpg" alt="">
+                            <span class="movie-list-item-title">Delhi Crime</span>
+                            <p class="movie-list-item-desc">As Delhi reels in the aftermath of a gang rape, DCP Vartika Chaturvedi leads a pain...</p>
+
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://static.toiimg.com/photo/msid-73723598/73723598.jpg?737284" alt="">
+                            
+                            <span class="movie-list-item-title">HIT</span>
+                            <p class="movie-list-item-desc">Vikram is a 30-year-old cop. While he is battling with his own traumatic past,the stakes get...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="13.jpg" alt="">
+                             <span class="movie-list-item-title">1920</span>
+                            <p class="movie-list-item-desc">Arjun falls in love with Lisa and abandons his family and faith for her. They move to a manor...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BZjQ0YTkzMWMtZWNlMi00ZmMxLWE5MDItYTRmZDljNTZiN2JkXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_FMjpg_UX1000_.jpg" alt="">
+                            <span class="movie-list-item-title">Bhramam</span>
+                            <p class="movie-list-item-desc">A piano player pretends to be visually impaired and un wittingly becomes entangled...
+                            </p>
+                            <button class="movie-list-item-button">WATCH</button>
+                        </div>
+                    </div>
+                    <i class="arrow fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="movie_website.js"></script>
+    
+</body>
+</html>
